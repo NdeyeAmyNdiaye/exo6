@@ -2,44 +2,54 @@
 <html>
 
 <head>
-	<title>
-		Exercice 6
-	</title>
-	<meta charset="utf-8">
+    <title>
+        Exercice 6
+    </title>
+    <meta charset="utf-8">
 </head>
 <body>
-    
     <form>
         <fieldset>
             <legend>Identité</legend>
             <ol>
-                <li><label>Nom:</label><input type="text" name="Nom" placeholder="Nom"/></li>
-                <li><label>Prenom:</label> <input type="text" name="Prenom" placeholder="Prenom" /></li>
-                <li><label>Adresse mail:</label><input type="mail" name="Adresse mail" placeholder="Mail"/></li>
+                <li><label>Nom:</label><input type="text" name="Nom" placeholder="Nom" required /></li>
+                <li><label>Prenom:</label> <input type="text" name="Prenom" placeholder="Prenom" required /></li>
+                <li><label>Adresse mail:</label><input type="mail" name="Adresse mail" placeholder="Mail" required />
+                </li>
             </ol>
         </fieldset>
         <fieldset>
             <legend>Adresse de livraison</legend>
             <ol>
-                <li><label for="adresse">Adresse:</label><textarea name="adresse" id="adress" cols="20" rows="5"placeholder="Adresse"></textarea></li>
-                <li><label for="code postal">Code postal:</label><input type="text"placeholder="Code postal"></li>
+                <li><label for="adresse">Adresse:</label><textarea name="adresse" id="adress" cols="20" rows="5"
+                        placeholder="Adresse"></textarea></li>
+                <li><label for="codePostal">Code postal:</label><input type="text" placeholder="CodePostal" required>
+                </li>
                 <li><label for="ville">Ville:</label> <input type="text" name="ville" placeholder="ville" /></li>
             </ol>
         </fieldset>
-            
+
 
         <fieldset>
             <legend>Informations de reglement</legend>
             <ol>
                 <li> Type de carte bancaire</li>
-                <input type="radio" name="visa" value="visa" id="visa" /> <label for="visa">Visa</label></br>
-                <input type="radio" name="mastercard" value="mastercard" id="mastercard" /> <label for="mastercard">Mastercard</label><br />
-                <li><label for="numero de carte">Numero de carte:</label><input type="text" name="numero" id="numero"placeholder="numero"></li>
-                <li><label for="code de securité">Code de securité:</label><input type="text"placeholder="Code de securité"></li>
-                <li><label for="Nom du titulaire">Nom du titulaire:</label> <input type="text" name="titulaire" placeholder="nom du titulaire" /></li>
+                <input type="radio" name="TypeCarte" value="visa" id="visa" /> <label for="visa">Visa</label></br>
+                <input type="radio" name="TypeCarte" value="mastercard" id="mastercard" /> <label
+                    for="mastercard">Mastercard</label><br />
+                <li><label for="numero de carte">Numero de carte:</label><input type="text" name="numero" id="numero"
+                        placeholder="numero"></li>
+                <li><label for="code de securité">Code de securité:</label><input type="text"
+                        placeholder="Code de securité"></li>
+                <li><label for="Nom du titulaire">Nom du titulaire:</label> <input type="text" name="titulaire"
+                        placeholder="nom du titulaire" /></li>
             </ol>
+        </fieldset>
+        <fieldset>
+            <button type=submit>J'achète !</button>
         </fieldset>
     </form>
 
 </body>
+
 </html>
